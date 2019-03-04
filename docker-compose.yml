@@ -1,0 +1,11 @@
+version: '3'
+services:
+  vue_app:
+    build: .
+    ports:
+      - 8000:8080
+    privileged: true
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
